@@ -12,6 +12,6 @@ router.get("/", ProductController.listProducts);
 router.delete("/:id", ProductController.deleteProduct);
 
 // Update the quantity of a product
-router.post("/:id/update_quantity", ProductController.updateProductQuantity);
+router.post("/update_quantity/:id", ProductController.updateProductQuantity);
 
 module.exports = router;
